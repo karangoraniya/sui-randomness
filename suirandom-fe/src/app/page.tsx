@@ -33,7 +33,7 @@ import { Winner, WinnerEvent } from "@/lib/type";
 import { TokenIcons } from "@/images";
 import Image from "next/image";
 import { useAddressProcessing } from "@/hooks/useAddressProcessing";
-import { processWinners } from "@/utils/winnerUtils";
+import { processWinners } from "@/lib/utils";
 
 const SuiRandom = () => {
   const [addresses, setAddresses] = useState("");
