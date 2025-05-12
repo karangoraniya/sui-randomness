@@ -9,12 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@mysten/dapp-kit": "^0.16.0",
-    "@mysten/sui": "^1.28.2",
+    "@mysten/dapp-kit": "^0.16.2",
+    "@mysten/sui": "^1.29.1",
     "@radix-ui/react-label": "^2.1.2",
     "@radix-ui/react-slot": "^1.2.0",
     "@radix-ui/react-tooltip": "^1.2.0",
-    "@tanstack/react-query": "^5.74.4",
+    "@tanstack/react-query": "^5.75.7",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.475.0",
