@@ -8,6 +8,7 @@ import {
 import { getFullnodeUrl } from "@mysten/sui/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import "@mysten/dapp-kit/dist/index.css";
+import { darkTheme } from "@/lib/helpers";
 
 const { networkConfig } = createNetworkConfig({
   testnet: { url: getFullnodeUrl("testnet") },
@@ -20,7 +21,9 @@ export function Providers({ children }: any) {
   return (
     <QueryClientProvider client={queryClient}>
       <SuiClientProvider networks={networkConfig} defaultNetwork="testnet">
-        <WalletProvider>{children}</WalletProvider>
+        <WalletProvider autoConnect={true} theme={darkTheme}>
+          {children}
+        </WalletProvider>
       </SuiClientProvider>
     </QueryClientProvider>
   );
